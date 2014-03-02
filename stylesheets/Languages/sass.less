@@ -1,0 +1,13 @@
+// ---------------------------------------------------------------------------
+//  Languages: Sass
+// ---------------------------------------------------------------------------
+
+    .source.scss {
+        .entity {
+            // Sass: %something
+            &.placeholder { color: @color-blue_pale; }
+        }
+
+        // Sass: $something
+        .variable:not(.interpolation):not(.set) { color: @color-red_pale; }
+    }
