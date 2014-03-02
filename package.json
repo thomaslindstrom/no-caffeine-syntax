@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "A dark, crisp and clean Atom Editor syntax theme with no caffeine",
-  "repository": "https://github.com/atom/no-caffeine-syntax",
+  "repository": "https://github.com/thomaslindstrom/no-caffeine-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
