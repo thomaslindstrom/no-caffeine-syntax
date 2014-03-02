@@ -40,15 +40,23 @@
                 color: @color-grey;
 
                 &.cursor-line {
-                    background: rgba(0, 0, 0, .4);
+                    background: rgba(255, 255, 255, .04);
                     position: relative;
 
                     &:after {
                         content: '';
-                        background: rgba(0, 0, 0, .3);
-                        width: 3px; height: 100%;
+                        background: rgba(255, 255, 255, .07);
+                        width: 4px; height: 100%;
                         position: absolute;
                         top: 0; right: -3px; bottom: 0; }
+                }
+
+                &.cursor-line-no-selection {
+                    background: rgba(0, 0, 0, .4);
+
+                    &:after {
+                        background: rgba(0, 0, 0, .3);
+                        width: 3px; }
                 }
             }
 
