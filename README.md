@@ -4,6 +4,14 @@ A syntax theme for Atom that is [crisp and clean with no caffeine](http://www.yo
 
 Background image stolen from [the CodeMirror Ambiance theme](http://codemirror.net/demo/theme.html).
 
+
+## Install:
+
+```
+apm install no-caffeine-syntax
+```
+
+
 ## Preview:
 
 ### CoffeeScript:
