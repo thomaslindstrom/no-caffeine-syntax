@@ -1,7 +1,7 @@
 {
   "name": "no-caffeine-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "description": "A dark, crisp and clean Atom Editor syntax theme with no caffeine",
   "repository": "https://github.com/thomaslindstrom/no-caffeine-syntax",
