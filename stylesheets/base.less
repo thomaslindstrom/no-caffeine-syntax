@@ -5,10 +5,9 @@
     .editor {
         background: @color-charcoal;
         color: @color-white_dark;
+        line-height: 1.5em;
 
-        // TODO: Add line height 1.45em
-
-        .selection .region { background: rgba(255, 255, 255, @highlight-opacity); }
+        .selection .region { background: rgba(255, 255, 255, @opacity-highlight); }
         .scroll-view .underlayer { background: @image-noise; }
         .wrap-guide { background: @color-charcoal_light; }
 
@@ -37,7 +36,7 @@
 
                     &:after {
                         content: '';
-                        background: rgba(255, 255, 255, @highlight-opacity);
+                        background: rgba(255, 255, 255, @opacity-highlight);
                         width: 4px; height: 100%;
                         position: absolute;
                         top: 0; right: -3px; bottom: 0; }
@@ -64,10 +63,8 @@
                     box-shadow: inset 1px 0 @color-charcoal_light; }
             }
 
-            .line {
-                &.cursor-line {
-                    background: rgba(0, 0, 0, .3); }
-            }
+            .line.cursor-line {
+                background: rgba(0, 0, 0, .3); }
 
                 .invisible-character { color: @color-brown_dark; }
 
@@ -118,6 +115,10 @@
                 &.modifier { color: @color-brown; }
 
                 &.class { color: @color-red_pale; }
+            }
+
+            .entity {
+                &.instance { color: @color-blue_pale; }
             }
 
             .support {

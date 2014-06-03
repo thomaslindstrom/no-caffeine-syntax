@@ -4,8 +4,11 @@
 
     .source.scss {
         .entity {
-            // Sass: %something
+            // Sass: %placeholder
             &.placeholder { color: @color-blue_pale; }
+
+            // Sass: &something
+            &.entity.reference + .property-name .invalid { color: @color-blue_pale; }
         }
 
         // Sass: $something
