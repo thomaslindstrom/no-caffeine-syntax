@@ -26,8 +26,6 @@
 
                 &.cursor-line {
                     background: rgba(255, 255, 255, .04);
-                    position: relative;
-
                     box-shadow: inset -1px 0 0 rgba(255, 255, 255, @opacity-highlight + .07); }
 
                 &.cursor-line-no-selection {
@@ -47,11 +45,7 @@
                     box-shadow: inset 1px 0 @color-charcoal_light; }
             }
 
-            .line {
-                border-left: 3px solid transparent;
-
-                &.cursor-line { background: rgba(0, 0, 0, .3); }
-            }
+            .line.cursor-line { background: rgba(0, 0, 0, .3); }
 
                 .invisible-character { color: @color-brown_dark; }
 
