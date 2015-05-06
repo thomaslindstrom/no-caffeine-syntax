@@ -3,12 +3,23 @@
 // ---------------------------------------------------------------------------
 
     .source.js {
+        // JavaScript: eg. *, =, +, *
+        .keyword.operator { color: @color-beige; }
+
+        // JavaScript: eg. new
+        .keyword.operator.new { color: @color-green_sea; }
+
         // JavaScript: Function parameter
-        .function .punctuation { color: @color-yellow; }
+        .meta.function { color: @color-yellow; }
 
         // JavaScript: Arrow =>
         .function .arrow { color: @color-brown; }
 
         // JavaScript: Semicolon ;
         .punctuation.terminator.statement { color: @color-grey; }
+
+        // JavaScript: comma, period
+        .delimiter {
+            &.comma, &.period { color: @color-brown_light; }
+        }
     }
