@@ -34,7 +34,10 @@
 
                 &.cursor-line-no-selection {
                     background: rgba(0, 0, 0, .4);
-                    box-shadow: inset -1px 0 0 rgba(255, 255, 255, .2); }
+                    box-shadow: inset -1px 0 0 rgba(255, 255, 255, .2);
+
+                    &.git-line-removed { padding-left: 10px; }
+                }
             }
 
     // -------------------------------------
@@ -99,9 +102,7 @@
             .storage {
                 // Coffee: ->
                 &.type.function { color: @color-brown; }
-
                 &.modifier { color: @color-brown; }
-
                 &.class { color: @color-red_pale; }
             }
 
