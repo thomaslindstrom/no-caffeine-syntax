@@ -11,7 +11,12 @@
             background: rgba(255, 255, 255, @opacity-highlight);
             margin-left: 4px; }
         .underlayer { background: @image-noise; }
-        .wrap-guide { background: @color-charcoal_light; }
+
+        &::shadow .wrap-guide {
+            background: @color-charcoal_light;
+            z-index: -1; }
+        // NOTE wrap guide overlays text for some reason? `z-index` tweak
+        // fixes this issue
 
     // -------------------------------------
     //  Scrollbar
