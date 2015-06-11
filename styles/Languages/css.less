@@ -20,8 +20,14 @@
         // CSS: semicolon
         .punctuation.terminator { color: @color-grey; }
 
-        // CSS: brackets
+        // CSS: brackets {}
         .punctuation.property-list { color: @color-grey; }
+
+        // CSS: section brackets {} (eg. @keyframes)
+        .punctuation.section { color: @color-grey; }
+
+        // CSS: keyframe selectors (eg. 0%)
+        .keyframes .entity.other.attribute-name { color: @color-green; }
 
         .keyword {
             // CSS: eg. %, em, px
