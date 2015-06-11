@@ -7,9 +7,6 @@
         color: @color-white_dark;
         line-height: 1.5em;
 
-        .selection .region {
-            background: rgba(255, 255, 255, @opacity-highlight);
-            margin-left: 4px; }
         .underlayer { background: @image-noise; }
 
         &::shadow .wrap-guide {
@@ -17,6 +14,7 @@
             z-index: -1; }
         // NOTE wrap guide overlays text for some reason? `z-index` tweak
         // fixes this issue
+        .selection .region { background: rgba(255, 255, 255, @opacity-highlight); }
 
     // -------------------------------------
     //  Scrollbar
