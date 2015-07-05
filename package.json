@@ -4,9 +4,15 @@
   "version": "0.15.2",
   "private": true,
   "description": "A dark, crisp and clean Atom Editor syntax theme with no caffeine",
+  "keywords": [
+    "dark",
+    "colorful",
+    "crisp",
+    "clean"
+  ],
   "repository": "https://github.com/thomaslindstrom/no-caffeine-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">0.200.0"
+    "atom": ">1.0.0"
   }
 }
