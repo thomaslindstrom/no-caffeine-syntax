@@ -131,10 +131,10 @@
         &::after {
             background: @color-charcoal @image-noise;
             border-bottom: none; }
-        &.active { color: @color-white_dark; }
-        
-        // Forces the tab elements to be on top of the added background
-        div {
-            z-index: 10;
+        &.active {
+            color: @color-white_dark;
+
+            // forces active tab elements to always be on top of the background
+            div { z-index: 10; }
         }
     }
