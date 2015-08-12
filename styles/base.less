@@ -132,4 +132,9 @@
             background: @color-charcoal @image-noise;
             border-bottom: none; }
         &.active { color: @color-white_dark; }
+        
+        // Forces the tab elements to be on top of the added background
+        div {
+            z-index: 10;
+        }
     }
