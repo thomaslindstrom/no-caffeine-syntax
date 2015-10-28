@@ -122,6 +122,9 @@
             }
 
             .support {
+                // Coffee: eg. length
+                &.constant { color: @color-blue_pale; }
+
                 // Coffee: eg. window, document
                 &.class { color: @color-blue_pale; }
 
@@ -129,10 +132,17 @@
                 &.function { color: @color-orange; }
             }
 
-            // Coffee: eg. null, false, true, undefined
-            .constant { color: @color-yellow_light; }
+            .constant {
+                // Coffee: eg. 50, 1000
+                &.numeric { color: @color-yellow_light; }
+            }
 
-            // Coffee: eg. this
-            .language.variable { color: @color-yellow_light; }
+            .language {
+                // Coffee: eg. null, false, true, undefined
+                &.constant { color: @color-yellow_light; }
+
+                // Coffee: eg. this
+                &.variable { color: @color-yellow_light; }
+            }
         }
     }
