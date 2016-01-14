@@ -73,76 +73,30 @@
     //  Source code
     // -------------------------------------
         .text, .source {
+            .control { color: @color-orange_dark; }
+            .operator { color: @color-beige; }
+            .brace { color: @color-brown_light; }
+            .modifier { color: @color-brown; }
+            .punctuation { color: @color-brown_light; }
+            .other.object { color: @color-beige; }
+            .delimiter { color: @color-brown_light; }
+            .string { color: @color-green; }
+            .embedded { color: @color-green_sea-2; }
+            .embedded .other.object { color: @color-green_sea; }
+            .regexp { color: @color-orange; }
+            .storage { color: @color-brown; }
+            .parameters { color: @color-yellow_pale; }
+            .parameter { color: @color-yellow; }
+            .entity { color: @color-white_dark; }
+            .storage + .entity { color: @color-blue_pale; }
+            .support.function { color: @color-orange; }
+            .language.constant { color: @color-yellow_light; }
+            .numeric.constant { color: @color-yellow_light; }
+            .logical { color: @color-yellow_pale; }
+
             .comment {
                 font-style: italic;
                 color: @color-brown_dark; }
-
-            .meta {
-                &.function .name { color: @color-blue; }
-                &.brace { color: @color-brown_light; }
-            }
-
-            .keyword {
-                // Coffee: eg. new, =, -, +, :, isnt, is
-                &.operator { color: @color-brown; }
-
-                // Coffee: eg. do, if, return, then, switch, for
-                &.control { color: @color-orange_dark; }
-            }
-
-            .variable {
-                &.assignment { color: @color-beige; }
-
-                // Coffee: function parameters
-                &.parameter { color: @color-yellow; }
-
-                // Coffee: @variable
-                &.instance { color: @color-green_sea; }
-            }
-
-            .string {
-                color: @color-green;
-
-                &.regexp { color: @color-orange; }
-
-                // Coffee: #{ variable }
-                .embedded.source { color: @color-green_sea-2; }
-            }
-
-            .storage {
-                // Coffee: ->
-                &.type.function { color: @color-brown; }
-                &.modifier { color: @color-brown; }
-                &.class { color: @color-red_pale; }
-            }
-
-            .entity {
-                &.instance { color: @color-blue_pale; }
-                &.type.object { color: @color-red_pale; }
-            }
-
-            .support {
-                // Coffee: eg. length
-                &.constant { color: @color-blue_pale; }
-
-                // Coffee: eg. window, document
-                &.class { color: @color-blue_pale; }
-
-                // Coffee: eg. push, indexOf
-                &.function { color: @color-orange; }
-            }
-
-            .constant {
-                // Coffee: eg. 50, 1000
-                &.numeric { color: @color-yellow_light; }
-            }
-
-            .language {
-                // Coffee: eg. null, false, true, undefined
-                &.constant { color: @color-yellow_light; }
-
-                // Coffee: eg. this
-                &.variable { color: @color-yellow_light; }
-            }
+            .comment .storage { color: @color-red_pale; }
         }
     }
