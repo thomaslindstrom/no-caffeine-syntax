@@ -14,6 +14,6 @@ apm install no-caffeine-syntax
 
 ## Preview:
 
-### CoffeeScript:
+### JavaScript:
 
 ![Screenshot of the No Caffeine syntax theme](https://s3.amazonaws.com/f.cl.ly/items/3o1m2O3X000b2R2c3b26/no-caffeine.png?v=45773fda)
