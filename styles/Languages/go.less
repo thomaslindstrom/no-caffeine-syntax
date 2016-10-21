@@ -1,0 +1,35 @@
+// ---------------------------------------------------------------------------
+//  Languages: Go
+// ---------------------------------------------------------------------------
+
+    .source.go {
+            .entity.name.function,
+            .keyword,
+            .type {
+              color: @color-blue;
+            }
+            .entity.name.type,
+            .bracket,
+            .punctuation.colon,
+            .punctuation.comma,
+            .support.function {
+              color: @color-white_dark;
+            }
+            .constant,
+            .fixme,
+            .todo,
+            .changed,
+            .xxx,
+            .idea,
+            .hack,
+            .note,
+            .review {
+              color: @color-red_pale;
+            }
+            .numeric.integer {
+              color: @color-yellow_pale;
+            }
+            .placeholder {
+              color: @color-yellow;
+            }
+    }
