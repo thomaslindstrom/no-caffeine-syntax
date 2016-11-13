@@ -1,7 +1,7 @@
 {
   "name": "no-caffeine-syntax",
   "theme": "syntax",
-  "version": "0.17.3",
+  "version": "0.17.4",
   "private": true,
   "description": "A dark, crisp and clean Atom Editor syntax theme with no caffeine",
   "keywords": [
