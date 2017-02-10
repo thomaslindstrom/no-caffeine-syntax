@@ -2,38 +2,38 @@
 //  Languages: CSS
 // ---------------------------------------------------------------------------
 
-    .source.css {
-        .entity {
-            &.tag { color: @color-orange; }
-            &.class, &.id { color: @color-blue; }
-            &.pseudo-class, &.pseudo-element { color: @color-brown; }
+    .syntax--source.syntax--css {
+        .syntax--entity {
+            &.syntax--tag { color: @color-orange; }
+            &.syntax--class, &.syntax--id { color: @color-blue; }
+            &.syntax--pseudo-class, &.syntax--pseudo-element { color: @color-brown; }
         }
 
         // CSS: parentheses in :not()
-        .selector .punctuation.function { color: @color-brown; }
+        .syntax--selector .syntax--punctuation.syntax--function { color: @color-brown; }
 
         // CSS: what comes after the property name
-        .property-value { color: @color-beige; }
+        .syntax--property-value { color: @color-beige; }
 
         // CSS: colon
-        .punctuation.separator { color: @color-grey; }
+        .syntax--punctuation.syntax--separator { color: @color-grey; }
         // CSS: semicolon
-        .punctuation.terminator { color: @color-grey; }
+        .syntax--punctuation.syntax--terminator { color: @color-grey; }
 
         // CSS: brackets {}
-        .punctuation.property-list { color: @color-grey; }
+        .syntax--punctuation.syntax--property-list { color: @color-grey; }
 
         // CSS: section brackets {} (eg. @keyframes)
-        .punctuation.section { color: @color-grey; }
+        .syntax--punctuation.syntax--section { color: @color-grey; }
 
         // CSS: keyframe selectors (eg. 0%)
-        .keyframes .entity.other.attribute-name { color: @color-green; }
+        .syntax--keyframes .syntax--entity.syntax--other.syntax--attribute-name { color: @color-green; }
 
-        .keyword {
+        .syntax--keyword {
             // CSS: eg. %, em, px
-            &.unit { color: @color-green_sea; }
+            &.syntax--unit { color: @color-green_sea; }
 
             // CSS: !important
-            &.important { color: @color-orange_dark; }
+            &.syntax--important { color: @color-orange_dark; }
         }
     }

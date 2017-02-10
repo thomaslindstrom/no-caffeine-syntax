@@ -2,13 +2,13 @@
 //  Languages: LESS
 // ---------------------------------------------------------------------------
 
-    .source.less {
+    .syntax--source.syntax--less {
         // LESS: @variable
-        .variable:not(.interpolation):not(.set) { color: @color-red_pale; }
+        .syntax--variable:not(.syntax--interpolation):not(.syntax--set) { color: @color-red_pale; }
 
         // LESS: &
-        .entity.parent-selector .definition { color: @color-beige; }
+        .syntax--entity.syntax--parent-selector .syntax--definition { color: @color-beige; }
 
         // LESS: color
-        .constant.other { color: @color-yellow_light; }
+        .syntax--constant.syntax--other { color: @color-yellow_light; }
     }

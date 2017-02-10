@@ -2,45 +2,45 @@
 //  Languages: Go
 // ---------------------------------------------------------------------------
 
-    .source.go {
-        .entity.function,
-        .keyword,
-        .support.function.builtin,
-        .type {
+    .syntax--source.syntax--go {
+        .syntax--entity.syntax--function,
+        .syntax--keyword,
+        .syntax--support.syntax--function.syntax--builtin,
+        .syntax--type {
             color: @color-blue;
         }
 
-        .entity.name.type,
-        .bracket,
-        .punctuation.colon,
-        .punctuation.comma,
-        .support.function {
+        .syntax--entity.syntax--name.syntax--type,
+        .syntax--bracket,
+        .syntax--punctuation.syntax--colon,
+        .syntax--punctuation.syntax--comma,
+        .syntax--support.syntax--function {
             color: @color-white_dark;
         }
 
-        .constant,
-        .fixme,
-        .todo,
-        .changed,
-        .xxx,
-        .idea,
-        .hack,
-        .note,
-        .review {
+        .syntax--constant,
+        .syntax--fixme,
+        .syntax--todo,
+        .syntax--changed,
+        .syntax--xxx,
+        .syntax--idea,
+        .syntax--hack,
+        .syntax--note,
+        .syntax--review {
             color: @color-red_pale;
         }
 
-        .numeric.integer,
-        .numeric.floating-point {
+        .syntax--numeric.syntax--integer,
+        .syntax--numeric.syntax--floating-point {
             color: @color-yellow_pale;
         }
 
-        .placeholder {
+        .syntax--placeholder {
             color: @color-yellow;
         }
 
-        .string.quoted.double {
-            .entity.name.import {
+        .syntax--string.syntax--quoted.syntax--double {
+            .syntax--entity.syntax--name.syntax--import {
                 color: @color-green;
             }
         }
