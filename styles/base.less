@@ -2,14 +2,14 @@
 //  Base
 // ---------------------------------------------------------------------------
 
-    atom-text-editor, :host {
+    atom-text-editor {
         background: @color-charcoal;
         color: @color-white_dark;
 
         .selection .region { background: rgba(255, 255, 255, @opacity-highlight); }
         .tile, .lines, .lines > div > div { background: @image-noise; }
 
-        &::shadow .wrap-guide { background: @color-charcoal_light; }
+        &.editor .wrap-guide { background: @color-charcoal_light; }
 
     // -------------------------------------
     //  Highlights
@@ -71,35 +71,35 @@
     // -------------------------------------
     //  Source code
     // -------------------------------------
-        .text, .source {
-            .control { color: @color-orange_dark; }
-            .operator { color: @color-beige; }
-            .brace, .braces { color: @color-brown_light; }
-            .modifier { color: @color-brown; }
-            .punctuation { color: @color-brown_light; }
-            .other.object { color: @color-beige; }
-            .delimiter { color: @color-brown_light; }
-            .string { color: @color-green; }
-            .embedded { color: @color-green_sea-2; }
-            .embedded .other.object { color: @color-green_sea; }
-            .regexp { color: @color-orange; }
-            .storage { color: @color-brown; }
-            .parameters { color: @color-yellow_pale; }
-            .parameter { color: @color-yellow; }
-            .entity { color: @color-white_dark; }
-            .storage + .entity { color: @color-blue_pale; }
-            .support.function { color: @color-orange; }
-            .language.constant { color: @color-yellow_light; }
-            .numeric.constant { color: @color-yellow_light; }
-            .logical { color: @color-yellow_pale; }
-            .comparison { color: @color-yellow_pale; }
-            .instance { color: @color-blue_pale; }
-            .variable.jsdoc { color: @color-yellow; }
-            .variable.language { color: @color-blue_pale; }
+        .syntax--text, .syntax--source {
+            .syntax--control { color: @color-orange_dark; }
+            .syntax--operator { color: @color-beige; }
+            .syntax--brace, .syntax--braces { color: @color-brown_light; }
+            .syntax--modifier { color: @color-brown; }
+            .syntax--punctuation { color: @color-brown_light; }
+            .syntax--other.syntax--object { color: @color-beige; }
+            .syntax--delimiter { color: @color-brown_light; }
+            .syntax--string { color: @color-green; }
+            .syntax--embedded { color: @color-green_sea-2; }
+            .syntax--embedded .syntax--other.syntax--object { color: @color-green_sea; }
+            .syntax--regexp { color: @color-orange; }
+            .syntax--storage { color: @color-brown; }
+            .syntax--parameters { color: @color-yellow_pale; }
+            .syntax--parameter { color: @color-yellow; }
+            .syntax--entity { color: @color-white_dark; }
+            .syntax--storage + .syntax--entity { color: @color-blue_pale; }
+            .syntax--support.syntax--function { color: @color-orange; }
+            .syntax--language.syntax--constant { color: @color-yellow_light; }
+            .syntax--numeric.syntax--constant { color: @color-yellow_light; }
+            .syntax--logical { color: @color-yellow_pale; }
+            .syntax--comparison { color: @color-yellow_pale; }
+            .syntax--instance { color: @color-blue_pale; }
+            .syntax--variable.syntax--jsdoc { color: @color-yellow; }
+            .syntax--variable.syntax--language { color: @color-blue_pale; }
 
-            .comment {
+            .syntax--comment {
                 font-style: italic;
                 color: @color-brown_dark; }
-            .comment .storage { color: @color-red_pale; }
+            .syntax--comment .syntax--storage { color: @color-red_pale; }
         }
     }

@@ -2,17 +2,17 @@
 //  Languages: HTML
 // ---------------------------------------------------------------------------
 
-    .text.html {
-        .meta.tag {
+    .syntax--text.syntax--html {
+        .syntax--meta.syntax--tag {
             // HTML: < />
-            .punctuation.tag { color: @color-grey; }
+            .syntax--punctuation.syntax--tag { color: @color-grey; }
 
             // HTML: eg. div, figure, a
-            .tag.name { color: @color-brown_light; }
+            .syntax--tag.syntax--name { color: @color-brown_light; }
 
             // HTML: eg. id, class, title
-            .attribute-name { color: @color-yellow; }
+            .syntax--attribute-name { color: @color-yellow; }
         }
 
-        .string .embedded { color: @color-white_dark; }
+        .syntax--string .syntax--embedded { color: @color-white_dark; }
     }
