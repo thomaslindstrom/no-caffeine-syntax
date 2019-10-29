@@ -2,38 +2,64 @@
 //  Languages: CSS
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--css {
-        .syntax--entity {
-            &.syntax--tag { color: @color-orange; }
-            &.syntax--class, &.syntax--id { color: @color-blue; }
-            &.syntax--pseudo-class, &.syntax--pseudo-element { color: @color-brown; }
-        }
-
-        // CSS: parentheses in :not()
-        .syntax--selector .syntax--punctuation.syntax--function { color: @color-brown; }
-
-        // CSS: what comes after the property name
-        .syntax--property-value { color: @color-beige; }
-
-        // CSS: colon
-        .syntax--punctuation.syntax--separator { color: @color-grey; }
-        // CSS: semicolon
-        .syntax--punctuation.syntax--terminator { color: @color-grey; }
-
-        // CSS: brackets {}
-        .syntax--punctuation.syntax--property-list { color: @color-grey; }
-
-        // CSS: section brackets {} (eg. @keyframes)
-        .syntax--punctuation.syntax--section { color: @color-grey; }
-
-        // CSS: keyframe selectors (eg. 0%)
-        .syntax--keyframes .syntax--entity.syntax--other.syntax--attribute-name { color: @color-green; }
-
-        .syntax--keyword {
-            // CSS: eg. %, em, px
-            &.syntax--unit { color: @color-green_sea; }
-
-            // CSS: !important
-            &.syntax--important { color: @color-orange_dark; }
-        }
+.syntax--source.syntax--css {
+  .syntax--entity {
+    &.syntax--tag {
+      color: @color-orange;
     }
+    &.syntax--class,
+    &.syntax--id {
+      color: @color-blue;
+    }
+    &.syntax--pseudo-class,
+    &.syntax--pseudo-element {
+      color: @color-brown;
+    }
+  }
+
+  // CSS: parentheses in :not()
+  .syntax--selector .syntax--punctuation.syntax--function {
+    color: @color-brown;
+  }
+
+  // CSS: what comes after the property name
+  .syntax--property-value {
+    color: @color-beige;
+  }
+
+  // CSS: colon
+  .syntax--punctuation.syntax--separator {
+    color: @color-grey;
+  }
+  // CSS: semicolon
+  .syntax--punctuation.syntax--terminator {
+    color: @color-grey;
+  }
+
+  // CSS: brackets {}
+  .syntax--punctuation.syntax--property-list {
+    color: @color-grey;
+  }
+
+  // CSS: section brackets {} (eg. @keyframes)
+  .syntax--punctuation.syntax--section {
+    color: @color-grey;
+  }
+
+  // CSS: keyframe selectors (eg. 0%)
+  .syntax--keyframes .syntax--entity.syntax--other.syntax--attribute-name {
+    color: @color-green;
+  }
+
+  .syntax--keyword {
+    // CSS: eg. %, em, px
+    &.syntax--unit {
+      color: @color-green_sea;
+    }
+
+    // CSS: !important
+    &.syntax--important {
+      color: @color-orange_dark;
+    }
+  }
+}

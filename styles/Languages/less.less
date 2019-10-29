@@ -2,13 +2,19 @@
 //  Languages: LESS
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--less {
-        // LESS: @variable
-        .syntax--variable:not(.syntax--interpolation):not(.syntax--set):not(.syntax--misc) { color: @color-red_pale; }
+.syntax--source.syntax--less {
+  // LESS: @variable
+  .syntax--variable:not(.syntax--interpolation):not(.syntax--set):not(.syntax--misc) {
+    color: @color-red_pale;
+  }
 
-        // LESS: &
-        .syntax--entity.syntax--parent-selector .syntax--definition { color: @color-beige; }
+  // LESS: &
+  .syntax--entity.syntax--parent-selector .syntax--definition {
+    color: @color-beige;
+  }
 
-        // LESS: color
-        .syntax--constant.syntax--other { color: @color-yellow_light; }
-    }
+  // LESS: color
+  .syntax--constant.syntax--other {
+    color: @color-yellow_light;
+  }
+}

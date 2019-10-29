@@ -2,28 +2,43 @@
 //  Languages: Markdown
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--gfm {
-        .syntax--markup { color: @color-beige; }
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    color: @color-beige;
+  }
 
-        // Markdown: ![]() and []()
-        .syntax--link {
-            color: @color-brown_dark;
+  // Markdown: ![]() and []()
+  .syntax--link {
+    color: @color-brown_dark;
 
-            .syntax--entity { color: @color-beige; }
-            .syntax--link { color: @color-yellow_light; }
-        }
-
-        // Markdown: *text*
-        .syntax--italic { font-style: italic; }
-
-        // Markdown: **text**
-        .syntax--bold { font-weight: 700; }
-
-        // Markdown: ```text```
-        .syntax--code, .syntax--raw {
-            .syntax--support.syntax--gfm { color: @color-brown_dark; }
-        }
-
-        // Markdown: > quote
-        .syntax--quote { color: @color-blue_pale; }
+    .syntax--entity {
+      color: @color-beige;
     }
+    .syntax--link {
+      color: @color-yellow_light;
+    }
+  }
+
+  // Markdown: *text*
+  .syntax--italic {
+    font-style: italic;
+  }
+
+  // Markdown: **text**
+  .syntax--bold {
+    font-weight: 700;
+  }
+
+  // Markdown: ```text```
+  .syntax--code,
+  .syntax--raw {
+    .syntax--support.syntax--gfm {
+      color: @color-brown_dark;
+    }
+  }
+
+  // Markdown: > quote
+  .syntax--quote {
+    color: @color-blue_pale;
+  }
+}

@@ -2,31 +2,37 @@
 //  Languages: Sass (Ruby Sass)
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--scss,
-    .syntax--source.syntax--sass {
-        .syntax--entity {
-            // Sass: %placeholder
-            &.syntax--placeholder { color: @color-blue_pale; }
-
-            // Sass: &something
-            &.syntax--entity.syntax--reference + .syntax--property-name .syntax--invalid { color: @color-blue_pale; }
-        }
-
-        // Sass: $something
-        .syntax--variable:not(.syntax--interpolation):not(.syntax--set):not(.syntax--parameter),
-        .syntax--variable-declaration {
-            color: @color-red_pale;
-
-            .syntax--punctuation.syntax--definition {
-                color: @color-red_pale;
-            }
-        }
+.syntax--source.syntax--scss,
+.syntax--source.syntax--sass {
+  .syntax--entity {
+    // Sass: %placeholder
+    &.syntax--placeholder {
+      color: @color-blue_pale;
     }
 
-    //  .sass Files
-    // import styles from css
-    @import (reference) "css.less";
-
-    .syntax--source.syntax--sass {
-        .syntax--source.syntax--css;
+    // Sass: &something
+    &.syntax--entity.syntax--reference
+      + .syntax--property-name
+      .syntax--invalid {
+      color: @color-blue_pale;
     }
+  }
+
+  // Sass: $something
+  .syntax--variable:not(.syntax--interpolation):not(.syntax--set):not(.syntax--parameter),
+  .syntax--variable-declaration {
+    color: @color-red_pale;
+
+    .syntax--punctuation.syntax--definition {
+      color: @color-red_pale;
+    }
+  }
+}
+
+//  .sass Files
+// import styles from css
+@import (reference) "css.less";
+
+.syntax--source.syntax--sass {
+  .syntax--source.syntax--css;
+}
