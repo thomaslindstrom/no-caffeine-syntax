@@ -2,22 +2,26 @@
 //  Languages: JavaScript
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--sql {
-
-      .syntax--meta.syntax--create, .syntax--meta.syntax--alter {
-        .syntax--keyword.syntax--other { color: @color-green_sea; }
-        .syntax--entity.syntax--name { color: @color-orange_dark; }
-      }
-
-      .syntax--storage.syntax--type {
-        color: @color-red_pale;
-      }
-
-      .syntax--storage.syntax--modifier {
-        color: @color-blue_pale;
-      }
-
-      .syntax--keyword.syntax--other.syntax--DDL {
-        color: @color-blue_pale;
-      }
+.syntax--source.syntax--sql {
+  .syntax--meta.syntax--create,
+  .syntax--meta.syntax--alter {
+    .syntax--keyword.syntax--other {
+      color: @color-green_sea;
     }
+    .syntax--entity.syntax--name {
+      color: @color-orange_dark;
+    }
+  }
+
+  .syntax--storage.syntax--type {
+    color: @color-red_pale;
+  }
+
+  .syntax--storage.syntax--modifier {
+    color: @color-blue_pale;
+  }
+
+  .syntax--keyword.syntax--other.syntax--DDL {
+    color: @color-blue_pale;
+  }
+}

@@ -2,7 +2,15 @@
 //  Languages: JSON
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--json {
-        // Key
-        .syntax--key .syntax--string { color: @color-blue_pale; }
-    }
+.syntax--source.syntax--json {
+  // Key
+  .syntax--key.syntax--string,
+  .syntax--key .syntax--string {
+    color: @color-blue_pale;
+  }
+
+  .syntax--underline.syntax--link {
+    color: @color-yellow_pale;
+    text-decoration: underline;
+  }
+}

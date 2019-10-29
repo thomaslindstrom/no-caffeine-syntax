@@ -2,13 +2,19 @@
 //  Languages: Yaml
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--yaml {
-        // Yaml: %key
-        .syntax--tag.syntax--yaml { color: @color-brown_light; }
+.syntax--source.syntax--yaml {
+  // Yaml: %key
+  .syntax--tag.syntax--yaml {
+    color: @color-brown_light;
+  }
 
-        // Yaml: %value - string
-        .syntax--string.syntax--quoted.syntax--single { color: @color-green; }
+  // Yaml: %value - string
+  .syntax--string.syntax--quoted.syntax--single {
+    color: @color-green;
+  }
 
-        // Yaml: %key - value unquoted
-        .syntax--string.syntax--unquoted { color: @color-brown; }
-    }
+  // Yaml: %key - value unquoted
+  .syntax--string.syntax--unquoted {
+    color: @color-brown;
+  }
+}

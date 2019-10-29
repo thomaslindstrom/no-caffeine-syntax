@@ -2,17 +2,25 @@
 //  Languages: HTML
 // ---------------------------------------------------------------------------
 
-    .syntax--text.syntax--html {
-        .syntax--meta.syntax--tag {
-            // HTML: < />
-            .syntax--punctuation.syntax--tag { color: @color-grey; }
-
-            // HTML: eg. div, figure, a
-            .syntax--tag.syntax--name { color: @color-brown_light; }
-
-            // HTML: eg. id, class, title
-            .syntax--attribute-name { color: @color-yellow; }
-        }
-
-        .syntax--string .syntax--embedded { color: @color-white_dark; }
+.syntax--text.syntax--html {
+  .syntax--meta.syntax--tag {
+    // HTML: < />
+    .syntax--punctuation.syntax--tag {
+      color: @color-grey;
     }
+
+    // HTML: eg. div, figure, a
+    .syntax--tag.syntax--name {
+      color: @color-brown_light;
+    }
+
+    // HTML: eg. id, class, title
+    .syntax--attribute-name {
+      color: @color-yellow;
+    }
+  }
+
+  .syntax--string .syntax--embedded {
+    color: @color-white_dark;
+  }
+}

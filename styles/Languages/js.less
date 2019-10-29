@@ -2,10 +2,39 @@
 //  Languages: JavaScript
 // ---------------------------------------------------------------------------
 
-    .syntax--source.syntax--js {
-        // Object property
-        .syntax--string.syntax--unquoted { color: @color-white_dark; }
+.syntax--source.syntax--js {
+  // Object property
+  .syntax--string.syntax--unquoted {
+    color: @color-white_dark;
+  }
 
-        // Function parameters
-        .syntax--function .syntax--variable.syntax--readwrite { color: @color-yellow; }
+  // Function parameters
+  .syntax--function .syntax--variable.syntax--readwrite,
+  .syntax--formal-parameter {
+    color: @color-yellow;
+  }
+
+  .syntax--name.syntax--function {
+    color: @color-blue_pale;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Languages: JSX
+// ---------------------------------------------------------------------------
+
+.syntax--source.syntax--js {
+  .syntax--component.syntax--jsx {
+    color: @color-orange;
+  }
+
+  .syntax--entity {
+    &.syntax--name.syntax--tag {
+      color: @color-red_pale;
     }
+    &.syntax--other.syntax--attribute-name {
+      color: @color-yellow_pale;
+      font-style: italic;
+    }
+  }
+}
